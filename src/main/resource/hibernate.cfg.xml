@@ -2,7 +2,9 @@
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
+
 <hibernate-configuration>
+
     <session-factory>
 
         <property name="connection.url">jdbc:postgresql://localhost:5432/postgres?useSSL=false&amp;serverTimezone=UTC

@@ -3,14 +3,14 @@ package jm.task.core.jdbc.util;
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
-import java.lang.module.Configuration;
-
 public class Util {
+
     final static String url = "jdbc:postgresql://localhost:5432/postgres";
-    final static String LOGIN = "postgres";
-    final static String PASSWORD = "admin";
+    final static String login = "postgres";
+    final static String password = "admin";
     private static SessionFactory sessionFactory = null;
 
     //    public static Connection getConnection() {
