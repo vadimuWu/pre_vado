@@ -11,7 +11,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import java.util.List;
 
 public class UserDaoHibernateImpl implements UserDao {
-    private final SessionFactory sessionFactory = (SessionFactory) Util.getConnection();
+    private final SessionFactory sessionFactory = Util.getConnection();
     private Session session = null;
     private Transaction transaction = null;
 

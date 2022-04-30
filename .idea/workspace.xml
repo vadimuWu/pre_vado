@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="254bc5d1-7c94-4af4-ac0f-3ae468c355da" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TaskJDBC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TaskJDBC.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jm/task/core/jdbc/dao/UserDaoHibernateImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-UserServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/UserServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651347058527</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first commit">
+      <created>1651348099869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651348099869</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

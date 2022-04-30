@@ -14,4 +14,9 @@
       <module name="TaskJDBC" target="17" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="TaskJDBC" options="--add-exports java.base/sun.util.locale.provider=ALL-UNNAMED" />
+    </option>
+  </component>
 </project>

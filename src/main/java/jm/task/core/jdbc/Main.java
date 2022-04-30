@@ -5,6 +5,7 @@ import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 
 public class Main {
+
     private static final UserService userService = new UserServiceImpl();
     private static final User user1 = new User(1L, "Ivan", "Petrov", (byte) 30);
     private static final User user2 = new User(2L, "Petr", "Ivanov", (byte) 18);
@@ -12,6 +13,16 @@ public class Main {
     private static final User user4 = new User(4L, "Harry", "Potter", (byte) 52);
 
     public static void main(String[] args) {
+//
+//        Configuration configuration = new Configuration();
+//        configuration.addAnnotatedClass(User.class);
+//        configuration.configure();
+//        try (SessionFactory sessionFactory = configuration.buildSessionFactory(); Session session = sessionFactory.openSession()){
+//            session.beginTransaction();
+//            User user = User.builder().id(1L).name("Ivan").lastName("Petrov").age((byte) 30).build();
+//            session.save(user);
+//            session.getTransaction().commit();
+//        }
         userService.createUsersTable();
         userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
         userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
