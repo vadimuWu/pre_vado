@@ -1,22 +1,24 @@
 package jm.task.core.jdbc;
 
-import jm.task.core.jdbc.dao.UserDao;
-import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
-import jm.task.core.jdbc.util.Util;
+import jm.task.core.jdbc.model.User;
+import jm.task.core.jdbc.service.UserService;
+import jm.task.core.jdbc.service.UserServiceImpl;
 
 public class Main {
-    public static void main(String[] args) {
-        Util.getConnection();
-        UserDao a = new UserDaoJDBCImpl();
-        a.createUsersTable();
-        a.saveUser("name1", "lastname1", (byte) 20);
-        a.saveUser("name2", "lastname2", (byte) 30);
-        a.saveUser("name3", "lastname3", (byte) 40);
-        a.saveUser("name4", "lastname4", (byte) 50);
+    private static final UserService userService = new UserServiceImpl();
+    private static final User user1 = new User(1L, "Ivan", "Petrov", (byte) 30);
+    private static final User user2 = new User(2L, "Petr", "Ivanov", (byte) 18);
+    private static final User user3 = new User(3L, "John", "Smith", (byte) 46);
+    private static final User user4 = new User(4L, "Harry", "Potter", (byte) 52);
 
-        a.removeUserById(1);
-        a.getAllUsers();
-        a.cleanUsersTable();
-        a.dropUsersTable();
+    public static void main(String[] args) {
+        userService.createUsersTable();
+        userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
+        userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
+        userService.saveUser(user3.getName(), user3.getLastName(), user3.getAge());
+        userService.saveUser(user4.getName(), user4.getLastName(), user4.getAge());
+        userService.getAllUsers();
+        userService.cleanUsersTable();
+        userService.dropUsersTable();
     }
 }
