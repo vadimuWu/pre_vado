@@ -24,7 +24,7 @@ public class UserDaoHibernateImpl implements UserDao {
         transaction = session.beginTransaction();
         try {
             session.createNativeQuery("CREATE TABLE IF NOT EXISTS users" +
-                    " (id long not null , name VARCHAR(50), " +
+                    " (id int not null , name VARCHAR(50), " +
                     "lastname VARCHAR(50), " +
                     "age int, " +
                     "PRIMARY KEY (id))").executeUpdate();
@@ -56,11 +56,11 @@ public class UserDaoHibernateImpl implements UserDao {
     }
 
     @Override
-    public void saveUser(String name, String lastName, byte age) {
+    public void saveUser(Integer id, String name, String lastName, byte age) {
         session = sessionFactory.openSession();
         transaction = session.beginTransaction();
         try {
-            session.save(new User(name, lastName, age));
+            session.save(new User(1, name, lastName, age));
             transaction.commit();
         } catch (HibernateException e) {
             e.printStackTrace();

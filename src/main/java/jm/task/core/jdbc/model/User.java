@@ -15,7 +15,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table
+@Table(name = "users")
 @Entity
 @Getter
 @Setter
@@ -27,16 +27,16 @@ import javax.persistence.Table;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
+    @Column
+    private Integer id;
 
-    @Column(name = "name")
+    @Column
     private String name;
 
-    @Column(name = "last_name")
+    @Column
     private String lastName;
 
-    @Column(name = "age")
+    @Column
     private Byte age;
 
     public User(String name, String lastName, byte age) {

@@ -16,7 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="TaskJDBC" options="--add-exports java.base/sun.util.locale.provider=ALL-UNNAMED" />
+      <module name="TaskJDBC" options="" />
     </option>
   </component>
 </project>
