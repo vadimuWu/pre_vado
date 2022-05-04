@@ -9,7 +9,7 @@ public interface UserService {
 
     void dropUsersTable();
 
-    void saveUser(Integer id, String name, String lastName, byte age);
+    void saveUser(String name, String lastName, byte age);
 
     void removeUserById(long id);
 
@@ -17,3 +17,4 @@ public interface UserService {
 
     void cleanUsersTable();
 }
+
